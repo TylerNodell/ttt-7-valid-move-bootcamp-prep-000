@@ -1,9 +1,8 @@
 # code your #valid_move? method here
 def valid_move(board, index)
-  ind = board[index]
-  if position_taken?(ind) == false
+  if position_taken?(board[index]) == false
     return true
-  elsif position_taken?(ind) == true
+  elsif position_taken?(board[index]) == true
     return false
   end
 end
