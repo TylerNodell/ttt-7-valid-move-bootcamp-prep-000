@@ -9,7 +9,7 @@ end
 
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
 def position_taken?(ind)
-  if ind == "X" || ind == "O" || ind > 9
+  if ind == "X" || ind == "O" || ind.length > 9
     return true
   elsif ind == " " || ind == "" || ind == nil
     return false
